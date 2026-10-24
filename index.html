@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover the Ni & Di collection. Browse products and place your order easily through WhatsApp.">
+  <meta name="theme-color" content="#f6f0e8">
+  <title>Ni & Di — Everyday finds, thoughtfully chosen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Welcome to Ni & Di · Easy ordering through WhatsApp</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Ni and Di home">Ni <span>&</span> Di</a>
+    <nav aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-trigger" id="open-cart" aria-label="Open shopping cart">Cart <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NI & DI EDIT</p>
+        <h1>Little finds.<br><em>Lovely moments.</em></h1>
+        <p>Discover thoughtfully chosen favourites for your everyday life.</p>
+        <a class="button button-dark" href="#shop">Explore the collection</a>
+        <p class="hero-note">A small business with a personal touch.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Neutral-toned abstract product display">
+        <div class="sun"></div><div class="arch arch-back"></div><div class="arch arch-front"></div>
+        <div class="display-box"></div><div class="display-vase"><i></i></div>
+        <span class="art-caption">MADE FOR YOUR EVERYDAY</span>
+      </div>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR NEXT FAVOURITE</p><h2>Shop the collection</h2></div>
+        <label class="search-wrap"><span class="sr-only">Search products</span><input id="search" type="search" placeholder="Search products…"></label>
+      </div>
+      <div class="category-row" id="categories" aria-label="Filter products"></div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No products found. Try another search.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-mark">N<span>&</span>D</div>
+      <div><p class="eyebrow">A NOTE FROM US</p><h2>Good things, chosen with care.</h2>
+      <p>Ni & Di is your space to discover everyday favourites. We're building our collection with care and would love to hear what you think.</p>
+      <a href="#contact" class="text-link">Say hello <span>↗</span></a></div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div><p class="eyebrow">WE'RE HERE TO HELP</p><h2>Let's talk.</h2><p>Questions about a product or your order? Send us a message.</p>
+        <p class="contact-small">The form opens your email app to send the message. Add your email address in the settings below.</p></div>
+      <form id="contact-form" class="contact-form">
+        <label>Your name<input name="name" required autocomplete="name" placeholder="Name"></label>
+        <label>Email address<input name="email" required type="email" autocomplete="email" placeholder="you@example.com"></label>
+        <label>Message<textarea name="message" rows="4" required placeholder="How can we help?"></textarea></label>
+        <button class="button button-dark" type="submit">Prepare message</button>
+        <p class="form-note" id="contact-note" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#">Ni <span>&</span> Di</a>
+    <p>Thoughtful finds for everyday living.</p>
+    <p class="copyright">© <span id="year"></span> Ni & Di. All rights reserved.</p>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-modal="true" role="dialog" hidden>
+    <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your cart</h2></div><button class="icon-button" id="close-cart" aria-label="Close cart">✕</button></div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div>
+      <p class="cart-disclaimer">Delivery charges, availability and final total are confirmed with the store.</p>
+      <button class="button button-dark full-width" id="whatsapp-checkout">Order via WhatsApp</button>
+      <button class="button button-light full-width" id="continue-shopping">Continue shopping</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
