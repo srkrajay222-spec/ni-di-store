@@ -20,8 +20,8 @@ This is a frontend starter website, not a complete secure ecommerce backend.
 ## Before publishing
 
 1. Open `script.js`.
-2. Replace `919XXXXXXXXX` with your business WhatsApp number in international format (India: `91` followed by your 10-digit mobile number, digits only).
-3. Replace `your-email@example.com` with your business contact email.
+2. Replace `918308652628` with your business WhatsApp number in international format (India: `91` followed by your 10-digit mobile number, digits only).
+3. Replace `srkrajay222@gmail.com` with your business contact email.
 4. Edit the `PRODUCTS` array with your real products, categories, prices and descriptions.
 5. Replace the decorative placeholder artwork with product photos if you have them. To do this, replace the `.product-placeholder` element in `script.js` with an image element using your image path, for example `<img src="images/product-1.jpg" alt="Product name">`, and add your images to an `images` folder. Make sure the `alt` text accurately describes each product.
 6. Test cart totals and WhatsApp order messages on your phone before sharing the website.
@@ -33,7 +33,7 @@ This is a frontend starter website, not a complete secure ecommerce backend.
 3. Upload `index.html`, `styles.css`, `script.js`, and `README.md` to the repository root.
 4. In the repository, open **Settings → Pages**.
 5. Under the build/deployment section, choose **Deploy from a branch**, select branch `main` and folder `/ (root)`, then save.
-6. Wait for deployment. GitHub Pages will show the published address, usually like `https://YOUR-USERNAME.github.io/ni-di-store/`.
+6. Wait for deployment. GitHub Pages will show the published address, usually like `https://srkrajay222-spec.github.io/ni-di-store/`.
 7. Open the published URL on mobile and laptop and test the site.
 
 GitHub Pages availability and terms can change; it is designed for static sites. Never put secret API keys or private customer data in this repository.
